@@ -1,0 +1,33 @@
+server:
+  port: 8885
+
+spring:
+  application:
+    name: config-server
+
+  profiles:
+    active: native
+
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          search-locations: "file:///D:/Microservices Architecture/config-repo"
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/reposhabbir/microservice-config-repo
+          default-label: main
+          search-paths:
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8767/eureka/
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
