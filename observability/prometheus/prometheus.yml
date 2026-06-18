@@ -1,0 +1,22 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: prometheus
+    static_configs:
+      - targets: ["prometheus:9090"]
+
+  # Spring Boot Actuator endpoints (if enabled)
+  - job_name: spring-services
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets:
+          - "eureka-server:8767"
+          - "config-server:8885"
+          - "api-gateway:8881"
+          - "user-service:8887"
+          - "auth-service:8886"
+          - "notification-service:8088"
+          - "order-service:8888"
+          - "ai-assistant-service:8890"
+

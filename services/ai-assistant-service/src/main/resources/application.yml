@@ -1,0 +1,21 @@
+server:
+  port: 8890
+
+spring:
+  application:
+    name: ai-assistant-service
+
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8767/eureka/}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
