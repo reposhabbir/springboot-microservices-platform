@@ -13,7 +13,7 @@ target/
 hs_err_pid*
 replay_pid*
 
-# Build
+# Build outputs
 out/
 build/
 
