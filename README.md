@@ -5,7 +5,7 @@ This repository is structured as an **enterprise microservices platform** with s
 ## Structure
 
 
----
+```
 
 microservices-platform/
 │
@@ -41,7 +41,7 @@ microservices-platform/
 └── docs/
 
 
----
+```
 
 
 ## Build
