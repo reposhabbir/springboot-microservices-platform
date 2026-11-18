@@ -4,6 +4,9 @@ This repository is structured as an **enterprise microservices platform** with s
 
 ## Structure
 
+
+---
+
 microservices-platform/
 │
 ├── pom.xml
@@ -36,6 +39,10 @@ microservices-platform/
 ├── deployment/
 ├── ci-cd/
 └── docs/
+
+
+---
+
 
 ## Build
 
