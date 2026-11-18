@@ -4,33 +4,38 @@ This repository is structured as an **enterprise microservices platform** with s
 
 ## Structure
 
-```
-microservices-platform
-├── infrastructure
-│   ├── eureka-server
-│   ├── config-server
-│   └── api-gateway
-├── services
-│   ├── auth-service
-│   ├── user-service
-│   ├── order-service
-│   ├── notification-service
-│   └── ai-assistant-service
-├── common-library
-├── messaging
-│   └── kafka
-├── observability
-│   ├── zipkin
-│   ├── prometheus
-│   └── grafana
-├── deployment
-│   ├── docker
-│   └── kubernetes
-├── ci-cd
-│   ├── jenkins
-│   └── github-actions
-└── docs
-```
+microservices-platform/
+│
+├── pom.xml
+│
+├── infrastructure/
+│   ├── eureka-server/
+│   │   └── pom.xml
+│   ├── config-server/
+│   │   └── pom.xml
+│   └── api-gateway/
+│       └── pom.xml
+│
+├── services/
+│   ├── auth-service/
+│   │   └── pom.xml
+│   ├── user-service/
+│   │   └── pom.xml
+│   ├── order-service/
+│   │   └── pom.xml
+│   ├── notification-service/
+│   │   └── pom.xml
+│   └── ai-assistant-service/
+│       └── pom.xml
+│
+├── common-library/
+│   └── pom.xml
+│
+├── messaging/
+├── observability/
+├── deployment/
+├── ci-cd/
+└── docs/
 
 ## Build
 
